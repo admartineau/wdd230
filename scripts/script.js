@@ -1,3 +1,3 @@
 year = new Date().getFullYear();
-document.querySelector("#year").innerHTML = year
-document.querySelector("#lastpageupdate").innerHTML= document.lastModified;
+document.querySelector("#year").textContent=year
+document.querySelector("#lastpageupdate").textContent=`Last Updated: ${document.lastModified}`;
