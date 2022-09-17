@@ -13,8 +13,8 @@ header img {
     margin: 1em;
 }
 
-footer {
-    display: flex;
+footer{
+    display: left;
     text-align: left;
     width: 100%;
     font-family: "Gill Sans", sans-serif;
