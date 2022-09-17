@@ -14,6 +14,10 @@ header img {
 }
 
 footer{
+<<<<<<< HEAD
+=======
+    display: left;
+>>>>>>> c8c0683c0824376cf94d34787d2cd6953a6be9a0
     text-align: left;
     width: 100%;
     font-family: "Gill Sans", sans-serif;
