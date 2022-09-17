@@ -1,7 +1,7 @@
-header, footer {
+header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     font-family: "Gill Sans", sans-serif;
     color:antiquewhite;
@@ -13,6 +13,15 @@ header img {
     margin: 1em;
 }
 
+footer {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    color:antiquewhite;
+    background-color:darkolivegreen;
+}
+
 #title {
     max-width: 20em;
 }
@@ -22,8 +31,8 @@ header img {
 
 main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align:left;
     font-family: "Gill Sans", sans-serif;
     background-color: antiquewhite;
@@ -38,5 +47,5 @@ main {
   }
 
 h1, h2 {
-    text-align: start;    
+    text-align: left;    
 }
