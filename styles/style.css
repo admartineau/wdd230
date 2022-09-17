@@ -1,0 +1,40 @@
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    color:antiquewhite;
+    background-color: #2c421f;
+}
+
+header img {
+    max-width: 30em;
+    margin: 1em;
+}
+
+#title {
+    max-width: 20em;
+}
+.home {
+    background-color: #2c421f;   
+}
+
+main {
+    display: flex 2;
+    align-items: center;
+    justify-content: center;
+    text-align:start;
+    font-family: "Gill Sans", sans-serif;
+ }
+ body {
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+h1, h2 {
+    text-align: start;    
+}
