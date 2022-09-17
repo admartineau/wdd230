@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    color:antiquewhite;
+    background-color:darkolivegreen;
+}
+
+header img {
+    max-width: 30em;
+    margin: 1em;
+}
+
+footer{
+    text-align: left;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    color:antiquewhite;
+    background-color:darkolivegreen;
+}
+
+#title {
+    max-width: 20em;
+}
+.home {
+    background-color:darkolivegreen;   
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align:left;
+    font-family: "Gill Sans", sans-serif;
+    background-color: antiquewhite;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 18px;
+    text-align: center;
+  }
+
+h1, h2 {
+    text-align: left;    
+}
