@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:antiquewhite;
     background-color:darkolivegreen;
 }
@@ -16,7 +16,7 @@ header img {
 footer{
     text-align: left;
     width: 100%;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:antiquewhite;
     background-color:darkolivegreen;
 }
@@ -33,7 +33,7 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
     text-align:left;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: antiquewhite;
     width: 100%;
  }
