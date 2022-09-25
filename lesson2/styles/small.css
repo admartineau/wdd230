@@ -1,0 +1,10 @@
+@media (min-width: 32.5em){
+    main {
+        grid-template-columns: auto auto;
+        
+    }
+    
+    .segment:nth-child(3n) {
+        grid-column:span 2;
+    }
+    }
