@@ -47,7 +47,7 @@ main {
 
 
  main img {
-    display: flex;
+    display: block;
     max-width: 30em;
     margin: 0 auto;
     border: .5px solid grey;
@@ -65,7 +65,7 @@ main {
 
  .segment_details {
     margin: auto;
-    display:flex;
+    display:block;
     width: 85%;
     text-align:center;
     background-color:cornsilk;
