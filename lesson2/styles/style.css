@@ -1,8 +1,9 @@
 header {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    margin: 0 auto;  
     font-family: 'Montserrat', sans-serif;
     color:antiquewhite;
     background-color:darkolivegreen;
@@ -13,12 +14,21 @@ header img {
     margin: 1em;
 }
 
+header h2 {
+    padding: 3em;
+    text-align: center;
+}
+
 footer{
     text-align: left;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     color:antiquewhite;
     background-color:darkolivegreen;
+}
+
+footer p {
+    padding: 1em;
 }
 
 #title {
@@ -29,7 +39,8 @@ footer{
 }
 
 main {
-    display: flex;
+    display: grid;
+    margin: auto;
     align-items: flex-start;
     justify-content: flex-start;
     text-align:left;
@@ -37,6 +48,12 @@ main {
     background-color: antiquewhite;
     width: 100%;
  }
+
+ .segment_content {
+    margin: auto;
+    display:block;
+    width: 90%;
+    background-color:antiquewhite;
  
  body {
     margin: 0 auto;
