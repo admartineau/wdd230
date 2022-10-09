@@ -2,7 +2,7 @@ function toggleMenu() {
     document.getElementById("primarynav").classList.toggle("open");
 }
 
-const x = document.getElementById('hambutton')
+const x = document.getElementById('hambutton');
 x.onclick = toggleMenu;
 
 year = new Date().getFullYear();
