@@ -37,8 +37,8 @@ nav ul li a:hover {
 nav ul {display: none;}
 nav ul.open {display: block;}
 
-#hambutton span:nth-child(1) {display: block;}
-#hambutton span:nth-child(2) {display: none;}
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
 
-#hambutton.open span:nth-child(1) {display: none;}
-#hambutton.open span:nth-child(2) {display: block;}
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
