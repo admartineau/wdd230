@@ -12,11 +12,11 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: #555;
+    color: rgb(74, 119, 216);
 }
 
 nav {
-    background-color: #eee;
+    background-color:rgb(54, 75, 146);
 }
 
 nav ul {
@@ -29,17 +29,17 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
-    border-top: 1px solid rgba(0,0,0,0.5);
+    color:blanchedalmond;
+    border-top: 1px solid rgba(30, 33, 189, 0.5);
 }
 
 nav ul li.active a {
-    background-color:  rgba(0,0,0,0.2);
-    color: #fff;
+    background-color:  rgba(130, 131, 206, 0.2);
+    color:azure;
 }
 
 nav ul li a:hover {
-    background-color:  rgba(0,0,0,0.3);
+    background-color:  rgba(30, 33, 189,0.3);
 }
 
 nav ul {display: none;}
