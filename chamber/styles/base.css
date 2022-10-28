@@ -1,4 +1,4 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
@@ -6,7 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/* Navigation bar. */
+/* navigation bar. */
 nav button {
     margin: .2rem 2vw;
     background-color: transparent;
@@ -50,3 +50,11 @@ nav ul.open {display: block;}
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* top banner */
+
+.topbanner{
+    display: none;
+    background-color: rgb(54, 75, 146);
+    line-height: 1.5;
+}

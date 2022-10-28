@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progressive Image Loading</title>
+        <meta name="description"
+            content="Example of Progressive Image Loading.">
+        <link rel="stylesheet" href="styles/progressive.css">
+        <script src="scripts/progressive.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Progressive Loading of Images/Lazy Loading</h1> 
+        <picture>
+     
+        </picture>
+        <picture>
+          <img class="images" src="images/placeholder.png" data-src="https://placedog.net/300/400" alt="Image of a garden">
+        </picture>
+        <picture>
+          <img class="images" src="images/placeholder300x400.png" data-src="images/leaves-photo300x400.jpg" alt="Image of fall leaves">
+        </picture>
+        <picture>
+          <img class="images" src="images/placeholder300x400.png" data-src="images/redflower-photo300x400.jpg" alt="Image of a flower">
+        </picture>
+        <picture>
+          <img class="images" src="images/placeholder300x400.png" data-src="images/yellow_flower300x400.jpg" alt="Image of yellow flowers">
+        </picture>
+        <footer></footer>
+        <script src="scripts/progressive_images.js"></script>
+    </body>
+</html>

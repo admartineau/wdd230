@@ -1,0 +1,22 @@
+body {
+    margin: auto;
+    width: 50%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border: 3px solid darkolivegreen
+}
+
+[data-src] {
+  filter: blur(0.2em);
+}
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
+}
