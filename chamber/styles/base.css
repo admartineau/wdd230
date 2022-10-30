@@ -24,26 +24,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* end color palette */
 }
 
-/*  header */
-
-header {
-    display: grid;
-    grid-template-columns: 20% 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: var(--accent1-background-color);
-    padding: 10px;
-    color: var(--secondary-font-color);
-    align-items: center;
-    min-width: 320px;
-  }
-
-  .logo {
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 2%;
-    width: 75%;
-  }
-
 /* contact */
 
 .contact {
@@ -52,6 +32,8 @@ header {
     align-items: center;
     padding: 1.25vw;
     background-color:var(--accent2-background-color);
+    color: var(--secondary-font-color);
+    font-size: large;
     font-weight: normal;
 }
 
@@ -69,11 +51,36 @@ header {
 }
 
 .contact img {
-    max-width: 4vw;
     align-self: center;
 }
 
 /* end contact */
+
+
+/*  header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: var(--accent2-background-color);
+    color:var(--secondary-font-color);
+}
+
+.container {
+    padding: 1.25vw;
+	display: flex;
+    align-self: flex-start;
+    text-align:justify
+	&__logoimage {
+        float:left;
+	}
+	&__text {
+		display:inline-flex;
+	}
+}
+
+
 
 /* navigation bar. */
 nav button {
@@ -85,7 +92,7 @@ nav button {
 }
 
 nav {
-    background-color:rgb(54, 75, 146);
+    background-color:var(--accent2-background-color);
 }
 
 nav ul {
@@ -98,7 +105,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color:blanchedalmond;
+    color:#ffebcd;
     border-top: 1px solid rgba(30, 33, 189, 0.5);
 }
 
@@ -124,14 +131,12 @@ nav ul.open {display: block;}
 
 /* image */
 
-
-
 img.socialicon {
     border-radius: 100%;
     width: 60%;
     margin: 0 auto;
     height: auto;
-  }
+  } 
 
 /* end image */
 
@@ -139,4 +144,9 @@ img.socialicon {
     display: none;
     background-color: rgb(54, 75, 146);
     line-height: 1.5;
+}
+
+main{
+
+    
 }
