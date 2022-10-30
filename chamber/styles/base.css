@@ -70,29 +70,30 @@ header {
 .container {
     padding: 1.25vw;
 	display: flex;
-    align-self: flex-start;
-    text-align:justify
-	&__logoimage {
-        float:left;
-	}
-	&__text {
-		display:inline-flex;
-	}
+    align-items: center;
+    justify-content: left;
 }
 
+#logoimage {
+    float:left;
+	}
 
+#logotext {
+    padding-left: 20px;
+	}
 
 /* navigation bar. */
+
+nav {
+    background-color:var(--accent2-background-color);
+}
+
 nav button {
     margin: .2rem 2vw;
     background-color: transparent;
     border: none;
     font-size: 2rem;
      color:blanchedalmond;
-}
-
-nav {
-    background-color:var(--accent2-background-color);
 }
 
 nav ul {
@@ -144,9 +145,4 @@ img.socialicon {
     display: none;
     background-color: rgb(54, 75, 146);
     line-height: 1.5;
-}
-
-main{
-
-    
 }

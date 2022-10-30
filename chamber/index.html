@@ -34,116 +34,45 @@
             </div>
 
             <div class="container">
-                <img class="container__logoimage" src="images/coloradoflag.webp" alt="Colorado Flag Logo">
-                <div class="container__logotext">
+                <img id="logoimage" src="images/coloradoflag.webp" alt="Colorado Flag Logo">
+                <div id="logotext">
                     <h1>Littleton</h1>
-                    <h2>Chamber of Commerce</h2>
-            </div>     
-       
-            <!--Navigation Button-->
+                    <h2>Chamber of Commerce</h2>     
+                </div>
 
-            <nav>
-                <button id="hamburgerBtn">
-                    <span>&#9776</span>
-                    <span>X</span>
-                </button>
-                <ul id="primaryNav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+                <div id="menu">
+                    <nav>
+                        <button id="hamburgerBtn">
+                            <span>&#9776</span>
+                            <span>X</span>
+                        </button>
+                        <ul id="primaryNav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
         </header>
 
         <main>
+
             <div class="main-div hero" >
                 <picture class="hero-image-container">
-                    <source srcset="images/wdd230-org_1200.jpg" media="(min-width:748px) and (max-width:1199px)">
-                    <source srcset="images/wdd230-org_800.jpg" media="(min-width:1200px)">
-                    <img src="images/wdd230-org_799.jpg" class="hero-image" alt = 'hero image' width="799" height="532">
+                    <img src="images/wdd230-org.webp" class="hero-image" alt = 'hero image'>
                 </picture>
-
-    
                 <h2 class="hero-banner">Welcome to Littleton, Colorado</h2>
-                <div class="hero-contrast-heading"><a href="#">Join Us!</a></div>
+                
+                    <div class="hero-contrast-heading"><a href="#">Join Us!</a></div>
+                    </div>
             </div>
-            <div class="main-div event">
-                <h3>Ribbon Cutting</h3>
-                <h4><span>💎</span>The Diamond Shack</h4>
-                <p>Join us for the grand opening of The Diamond Shack, Thursday 
-                    a 1:00pm.<a href = "#">more info ...</a>
-                </p>
-            </div>
-            <div class="main-div weather" >
-                <h3>Weather</h3>
-                <div class="side-by-side">
-                    <img class="spotlight-icon" id="weather_icon" src="images/01d@4x.png" height="75" width="75" alt="weather icon">
-                    <h4><span id='temperature'>32</span>°F</h4>
-                </div>
-                <div class="weather-forecast">
-                    <h4 class="align-right forecast">
-                        <span id="forecast">Partly Cloudy</span>
-                    </h4>
-                    <hr>
-                </div>
-                    <div class="weather-table">
-                    <table class="center">
-                        <tr>
-                            <td><p>Wind Speed:</p></td>
-                            <td><p><span id='wind_speed'>20</span> mph</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>Wind Chill:</p></td>
-                            <td><p><span id='wind_chill'>N/A</span></p></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="main-div join">
-                <div class="contrast-heading"><a href="#">Join Us!</a></div>
-                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-            </div>
-            <div class="main-div news-release">
-                <h3>News Release</h3>
-                <p>Spicy jalapeno bacon ipsum dolor amet capicola ut pastrami biltong cow pork belly. 
-                    Pork belly shankle ea, sint tongue beef consectetur eiusmod do ribeye nisi dolore. 
-                    Deserunt ribeye biltong aliqua tail, buffalo aute ground round id ham hock quis eu 
-                    capicola ut tri-tip. Commodo landjaeger laboris enim elit shoulder pork loin. 
-                        </p>
-            </div>
-            <div class="spotlight-container">
-                <div class="spotlight-div">
-                    <h3>Thankful Transport</h3>
-                    <span class="spotlight-icon">🚚</span>
-                    <p>"We get it there for you!"</p>
-                    <hr>
-                    <a href="mailto:hello@thankfultransport.com">hello@thankfultransport.com</a>
-                    <p>(253)555-2121</p>
-        
-                </div>
-                <div class="spotlight-div" >
-                    <h3>Code Primera</h3>
-                    <span class="spotlight-icon">🏫</span>
-                    <p>An after school instruction program.</p>
-                    <hr>
-                    <a href="mailto:contact@primeracoding.com">contact@primeracoding.com</a>
-                    <p>(253)555-2222</p>
-        
-    
-                </div>
-                <div class="spotlight-div spotlight-3">
-                    <h3>Build A Treefort</h3>
-                    <img src="images/tree_house_80.png" alt="tree house" width="80" height="80">
-                    <p>Over 1000 plans!</p>
-                    <hr>
-                    <a href="mailto:builda@treefort.com">builda@treefort.com</a>
-                    <p>(253)555-3333</p>
-    
-                </div>
-            </div>
+
         </main>
+
         <footer>
             <p>© <b id="year"></b> | Allen Martineau | Colorado</p>
             <p id="lastpageupdate"></p>
