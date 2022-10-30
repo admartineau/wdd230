@@ -24,6 +24,26 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* end color palette */
 }
 
+/*  header */
+
+header {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--accent1-background-color);
+    padding: 10px;
+    color: var(--secondary-font-color);
+    align-items: center;
+    min-width: 320px;
+  }
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 2%;
+    width: 75%;
+  }
+
 /* contact */
 
 .contact {
@@ -31,14 +51,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     flex-direction: row;
     align-items: center;
     padding: 1.25vw;
-    background-color:#364b92;
-    font-family: 'Cabin', sans-serif;
+    background-color:var(--accent2-background-color);
     font-weight: normal;
 }
 
 .contact div {
-    font-size: 2.5vw;
-    color:#ffebcd;
+    color:var(--secondary-font-color);
     letter-spacing: .75px;
 }
 
@@ -106,9 +124,7 @@ nav ul.open {display: block;}
 
 /* image */
 
-img.logo {
 
-}
 
 img.socialicon {
     border-radius: 100%;
