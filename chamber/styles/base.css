@@ -389,7 +389,7 @@ form fieldset {
   }
   
   .background-fill {
-    background-color: var(--nav-background-color);
+    background-color: var(--color3);
   }
   
   .stacked {
