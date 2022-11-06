@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Littleton Chamber of Commerce</title>
+        <meta name="author" content="Allen Martineau"/>
+        <meta name="description"
+            content="Littleton Chamber of Commerce WDD230 - Web Frontend Development at BYUi.">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <script src="./scripts/script.js" defer></script>
+    </head>
+
+    <body>
+
+        <div class="topbanner" id="meetingBanner">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+
+        <header>
+
+            <div class="contact">(303) 795-0142 | info@bestchamber.com
+                <a href="https://www.facebook.com/bestchamber/" target="_blank"><img class="socialicon" src="images/facebook.png" alt="Facebook icon."></a>
+                <a href="https://twitter.com/BestChamber/" target="_blank"><img class="socialicon" src="images/twitter.png" alt="Twitter icon."></a>
+            </div>
+
+            <div class="container">
+                <img id="logoimage" src="images/coloradoflag.webp" alt="Colorado Flag Logo">
+                <div id="logotext">
+                    <h1>Littleton</h1>
+                    <h2>Chamber of Commerce</h2>     
+                </div>
+
+                <div id="menu">
+                    <nav>
+                        <button id="hamburgerBtn">
+                            <span>&#9776</span>
+                            <span>X</span>
+                        </button>
+                        <ul id="primaryNav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li class="active"><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <main>
+            <div class="background-fill stacked">
+                <h2 class="center">Join the Chamber of Commerce</h2>
+    
+                <div class="background-fill sxs">
+                    <div class="form">
+                        <form method="get" action="thankyou.html">
+                            <fieldset>
+                                <legend>Tell us more.</legend>
+                                <label class="top">First Name* <input type="text" name="fname" required /></label>
+                                <label class="top">Last Name* <input type="text" name="lname" required /></label>
+                                <label class="top">Business position/title
+                                    <input type="text" pattern="[A-Za-z\- ]{7,}" name="position" /></label>
+                                <label class="top">Email*
+                                    <input type="email" name="email" placeholder="someone@gmail.com" required /></label>
+                                <label class="top">Cell phone number*
+                                    <input type="tel" name="cell_phone" placeholder="1235551234" required /></label>
+                                <label class="top">Business name*
+                                    <input type="text" name="business_title" required /></label>
+                                <label class="top">Business description<textarea class="description-text" rows="4" cols="23"
+                                        name="business_description"></textarea>
+                                </label>
+                            </fieldset>
+    
+                            <fieldset>
+                                <legend>Membership Level</legend>
+                                <label class="sbs"><input type="radio" name="audience" value="np" required />
+                                    Non-profit</label>
+                                <label class="sbs"><input type="radio" name="audience" value="bronze" />
+                                    Bronze</label>
+                                <label class="sbs"><input type="radio" name="audience" value="silver" />
+                                    Silver</label>
+                                <label class="sbs"><input type="radio" name="audience" value="gold" /> Gold</label>
+                            </fieldset>
+    
+                            <input class="submit-btn" type="submit" value="Apply to the Chamber!" />
+                            <input type="text" id="application_date" name="application_date" hidden />
+                        </form>
+                    </div>
+                    <div class="hide-base">
+                        <div class="color-box" id="gold-level">
+                            <div>Gold Membership $1500</div>
+                            <div>
+                                Gold Benefits
+                                <ul>
+                                    <li>All silver benfits</li>
+                                    <li>Highlighted Directory Listing</li>
+                                    <li>Ribbon Cuttings</li>
+                                    <li>4 tickets to Citizen luncheon</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="color-box" id="silver-level">
+                            <div>Silver Membership $1000</div>
+                            <div>
+                                Silver Benefits
+                                <ul>
+                                    <li>All bronze benfits</li>
+                                    <li>Competitive Edge events</li>
+                                    <li>Member spotlight</li>
+                                    <li>Category banner</li>
+                                </ul>
+                            </div>
+                            `
+                        </div>
+                        <div class="color-box" id="bronze-level">
+                            <div>Bronze Membership $500</div>
+                            <div>
+                                Bronze Benefits
+                                <ul>
+                                    <li>Chamber directory listing</li>
+                                    <li>Relay conference access</li>
+                                    <li>Chamber email list access</li>
+                                    <li>Membership plaque & decal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <p>© <b id="year"></b> | Allen Martineau | Colorado</p>
+            <p id="lastpageupdate"></p>
+        </footer>
+        <script src="scripts/lastupdate.js"></script>
+    </body>
+</html>

@@ -49,3 +49,8 @@ imagesToLoad.forEach(img => {
         loadImages(img);
     });
 }
+
+// set date on join page
+if (URL == "join.html") {
+    document.getElementById("application_date").value = date.getTime();
+}
