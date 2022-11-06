@@ -169,14 +169,14 @@ img.socialicon {
 
 form fieldset {
     margin: 2rem 1px;
-    border: 1px solid var(--accent3-color);
+    border: 1px solid var(--accent1-background-color);
     border-radius: 10px;
     padding: 0.5rem;
     padding-right: 1.5rem;
   }
   
   form legend {
-    color: var(--accent3-color);
+    color: var(--secondary-font-color);
     margin: 0 1rem;
     padding: 0 0.5rem;
   }
@@ -185,7 +185,7 @@ form fieldset {
   form div {
     display: block;
     padding-top: 1rem;
-    color: var(--accent4-color);
+    color: var(--secondary-font-color);
     font-size: 0.8rem;
   }
   
@@ -202,16 +202,16 @@ form fieldset {
     background-color: #fff7effb;
   }
   
-  form label.sbs {
+  form label.mll {
     display: block;
     padding: 0.75rem 0;
-    color: #555;
+    color:var(--secondary-font-color);
   }
   
   form input.submit-btn {
     border: none;
-    background-color: #9c2c13;
-    color: white;
+    background-color:var(--primary-font-color);
+    color: var(--secondary-font-color);
     border-radius: 1rem;
     padding: 0.75rem;
     margin: 0 0 2rem 2%;
@@ -220,13 +220,13 @@ form fieldset {
   }
   
   form input.submit-btn:hover {
-    background-color: #49170b;
+    background-color:var(--color2);
     cursor: pointer;
   }
   
   form label.top input,
   form label.top textarea {
-    border-left: #fff7effb solid 6px;
+    border-left: var(--secondary-font-color) solid 6px;
   }
   
   form label.top input:required {
@@ -248,7 +248,7 @@ form fieldset {
   }
   
   #bronze-level {
-    background-color: burlywood;
+    background-color: rgb(220, 169, 103);
   }
   
   #silver-level {
@@ -256,7 +256,7 @@ form fieldset {
   }
   
   #gold-level {
-    background-color: gold;
+    background-color: rgb(242, 187, 49);
   }
   
   .color-box {
@@ -332,7 +332,7 @@ form fieldset {
   }
   
   .background-fill {
-    background-color: var(--nav-background-color);
+    background-color: var(--color3);
   }
 
   @keyframes appear {
@@ -404,5 +404,11 @@ form fieldset {
     flex-flow: row nowrap;
     width: 100%;
     justify-content: space-evenly;
+  }
+
+  footer {
+    background-color: var(--accent2-background-color);
+    text-align: center;
+    color: var(--secondary-background-color);
   }
   
