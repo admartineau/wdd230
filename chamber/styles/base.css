@@ -397,6 +397,7 @@ form fieldset {
     flex-flow: column nowrap;
     align-items: center;
     margin-top: 10px;
+    color: var(--secondary-font-color)
   }
   
   .sxs {
