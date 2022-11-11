@@ -1,13 +1,17 @@
+main {
+    background-color: antiquewhite;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 section {
+    background-color:darkolivegreen;
+    border: 1px solid darkgray;
     margin: 0.25rem;
     padding: 0.35rem;
-    background-color:darkolivegreen;
-    border: 1px solid #bbb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +19,6 @@ section {
 }
 
 section > p {
-  
     color:antiquewhite;
 }
 
@@ -33,7 +36,7 @@ img {
 }
 
 header, footer {
-    border-top: 1px solid #555;
+    border-top: 1px solid darkgray;
     padding: 20px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -45,10 +48,11 @@ header, footer {
 
 h1 {
     text-align: center;
+    border: 1px solid darkgray;
     padding-top: 15px;
     width: 100%;
     height: 60px;
-    border: 1px solid darkgray;
+    color:whitesmoke
 }
 
 h2 {
