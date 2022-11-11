@@ -1,0 +1,66 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color:darkolivegreen;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:antiquewhite;
+}
+
+section > p {
+  
+    color:antiquewhite;
+}
+
+section:hover {
+    background-color:darkgray;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 300px;
+    border: 1px solid #333;
+    margin-bottom: 0;
+}
+
+header, footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:antiquewhite;
+    background-color:darkolivegreen;
+
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid darkgray;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:whitesmoke;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    color:antiquewhite;
+    font-style: italic;
+    text-align: center;
+}
+
+
