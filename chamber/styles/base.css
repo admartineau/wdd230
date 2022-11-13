@@ -501,7 +501,7 @@ form fieldset {
   
   img {
     height: 75px;
-    max-width: 100%; /* Images are jerks - Seattle*/
+    max-width: 100%; 
   }
   
   @media (min-width: 700px) {
