@@ -413,3 +413,99 @@ form fieldset {
     color: var(--secondary-background-color);
   }
   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #eee;
+    font-family: "Caveat", cursive;
+  }
+  
+  .menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bbb;
+    text-align: center;
+  }
+  
+  .menu button {
+    padding: 1rem;
+  }
+  
+  article,
+  section {
+    margin: 0.75rem;
+  }
+  
+  section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #ccc;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .grid section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .grid section > * {
+    margin: 0.1rem;
+  }
+  
+  .list section {
+    flex-direction: row;
+    justify-content: left;
+  }
+  
+  .list section > * {
+    margin: 0 1rem;
+    text-align: left;
+  }
+  
+  .list section img {
+    display: none; /* smaller viewports only */
+  }
+  
+  section h3 {
+    font-size: 1.5rem;
+  }
+  
+  section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  img {
+    height: 75px;
+    max-width: 100%; /* Images are jerks - Seattle*/
+  }
+  
+  @media (min-width: 700px) {
+    .list section img {
+      display: block;
+    }
+  }
