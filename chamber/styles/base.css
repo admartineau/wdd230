@@ -389,7 +389,7 @@ form fieldset {
   }
   
   .background-fill {
-    background-color: var(--color3);
+    background-color: var(--accent2-background-color);
   }
   
   .stacked {
@@ -418,21 +418,18 @@ form fieldset {
     padding: 0;
     box-sizing: border-box;
   }
-  
   main {
     margin: 0 auto;
-    border: 1px solid #bbb;
+    border: 1px solid var(--secondary-font-color);
     padding: 0.5rem;
     max-width: 700px;
-    background-color: #eee;
-    font-family: "Caveat", cursive;
-  }
+    background-color: var(--accent2-background-color)  }
   
   .menu {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #bbb;
+    background-color: var(--accent2-background-color);
     text-align: center;
   }
   
@@ -443,6 +440,7 @@ form fieldset {
   article,
   section {
     margin: 0.75rem;
+    
   }
   
   section {
