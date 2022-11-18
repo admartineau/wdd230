@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Littleton Chamber of Commerce</title>
+        <meta name="author" content="Allen Martineau"/>
+        <meta name="description"
+            content="Littleton Chamber of Commerce WDD230 - Web Frontend Development at BYUi.">
+        <link rel="stylesheet" href="/chamber/styles/normalize.css">
+        <link rel="stylesheet" href="/chamber/styles/base.css">
+        <link rel="stylesheet" href="/chamber/styles/medium.css">
+        <link rel="stylesheet" href="/chamber/styles/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+
+        <div class="topbanner" id="meetingBanner">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+
+        <header>
+
+            <div class="contact">(303) 795-0142 | info@bestchamber.com
+                <a href="https://www.facebook.com/bestchamber/" target="_blank"><img class="socialicon" src="/chamber/images/facebook.png" alt="Facebook icon."></a>
+                <a href="https://twitter.com/BestChamber/" target="_blank"><img class="socialicon" src="/chamber/images/twitter.png" alt="Twitter icon."></a>
+            </div>
+
+            <div class="container">
+                <img id="logoimage" src="/chamber/images/coloradoflag.webp" alt="Colorado Flag Logo">
+                <div id="logotext">
+                    <h1>Littleton</h1>
+                    <h2>Chamber of Commerce</h2>     
+                </div>
+                <div id="menu">
+                    <nav>
+                        <button id="hamburgerBtn">
+                            <span>&#9776</span>
+                            <span>X</span>
+                        </button>
+                        <ul id="primaryNav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li class=><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <main>
+            <h1>OpenWeatherMap.org API Test</h1>
+                <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
+            <h2>Current Condition Icon</h2>
+        <figure>
+            <img src="" alt="" id="weather-icon" />
+            <figcaption></figcaption>
+        </figure>
+
+        <script src="scripts/weatherapi.js"></script>
+            
+        </main>
+
+        <footer>
+            <p>© <b id="year"></b> | Allen Martineau | Colorado</p>
+            <p id="lastpageupdate"></p>
+        </footer>
+        <script src="/chamber/scripts/script.js"></script>
+    </body>
+</html>
