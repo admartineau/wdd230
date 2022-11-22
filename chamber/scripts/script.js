@@ -61,15 +61,38 @@ const display = document.querySelector("article");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-gridbutton.addEventListener("click", () => {
+//gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
+	//display.classList.add("grid");
+	//display.classList.remove("list");
+//});
 
-listbutton.addEventListener("click", showList); // example using defined function
+//listbutton.addEventListener("click", showList); // example using defined function
 
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+//function showList() {
+	//display.classList.add("list");
+	//display.classList.remove("grid");
+//}
+
+// todays date 
+
+const datefield = document.querySelector(".date");
+
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+
+datefield.innerHTML = `<em>${fulldate}</em>`;
+
+
+// meeting banner
+
+let dayWeek = date.getDay();
+if (dayWeek == 1 | dayWeek ==2) {
+    let banner = document.getElementById("banner");
+    if (banner != undefined) {
+        banner.style.display = "block";
+        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    }
 }
