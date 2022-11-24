@@ -53,21 +53,6 @@ h2 {
 }
 
 h3 {
-    font-weight: normal;
-    color: var(--secondary-font-color);
-}
-
-p {
-    font-weight: normal;
-    color: var(--secondary-font-color);
-}
-
-/* banner */
-.banner {
-    margin: 0 auto;
-}
-
-.banner p {
     margin: 0;
     padding: .5rem 0;
     text-align: center;
@@ -76,6 +61,24 @@ p {
     color: var(--accent1-background-color);
     background-color: var(--primary-background-color);
 }
+
+p {
+    font-weight: normal;
+    color: var(--secondary-font-color);
+}
+
+/* banner */
+
+.banner {
+    margin: 0 auto;
+    padding: .5rem 0;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    background-color: var(--accent2-background-color);
+}
+
 /* end banner */
 
 /* header */

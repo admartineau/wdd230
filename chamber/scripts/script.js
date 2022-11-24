@@ -59,7 +59,6 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 //gridbutton.addEventListener("click", () => {
 	// example using arrow function
@@ -78,9 +77,9 @@ const display = document.querySelector("article");
 
 const datefield = document.querySelector(".date");
 
-const now = new Date();
+const todayDate = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
+	todayDate
 );
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
@@ -88,7 +87,9 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 // meeting banner
 
-let dayWeek = date.getDay();
+let dayWeek = todayDate.getDay();
+console.log(dayWeek);
+
 if (dayWeek == 1 | dayWeek ==2) {
     let banner = document.getElementById("banner");
     if (banner != undefined) {
