@@ -360,6 +360,34 @@ main.home div.hero h3 {
 .hero button:hover {
     cursor: pointer;
 }
+
+/* weather card */
+
+main.home div.wcard {
+  background-color: var(--accent1-background-color);
+  text-align: center;
+}
+
+main.home div.wcard a:visited {
+  color: var(--tertiary-font-color)
+}
+
+/* event card */
+
+main.home div.ecard {
+  background-color: var(--accent1-background-color);
+  text-align: center;
+}
+
+/* news card */
+
+main.home div.ncard {
+  background-color: var(--accent1-background-color);
+  text-align: center;
+}
+
+
+
 /*
 main.home div,
 main.discover div,
