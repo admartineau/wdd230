@@ -281,7 +281,8 @@ main.home div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 5%;
+    margin: 2rem 10%;
+    gap: 10px 10px;
 }
 
 main div button {
@@ -386,7 +387,10 @@ main.home div.ncard {
   text-align: center;
 }
 
-
+main.home div.jcard {
+  background-color: var(--accent1-background-color);
+  text-align: center;
+}
 
 /*
 main.home div,
