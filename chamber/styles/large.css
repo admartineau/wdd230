@@ -4,5 +4,79 @@
         padding: .5rem 1rem;
     }
 
-
 }
+
+/* main.home */
+
+main.home {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr .5fr 1fr;
+        column-gap: .5rem;
+        row-gap: .5rem;
+        justify-items: stretch;
+        margin: auto auto 3rem auto;
+    }
+
+    main.home div {
+        margin: .1rem 1% .1rem 1%;
+    }
+
+    main.home div h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    main.home div h3 {
+        font-size: 1.25rem;
+        margin: .75rem 5%;
+        width: inherit;
+    }
+
+    main div p {
+        margin: .5rem .2rem;
+    }
+
+    main div button {
+        font-size: 1rem;
+        margin: .5rem 5%;
+        padding: .5rem 1.75rem;
+    }
+
+/* end home */
+
+/* main.home div.hero */
+
+    div.hero {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+        top: 14vw;
+    }
+
+    main.home div.hero h2 {
+        font-size: 1.2rem;
+        top: 23vw;
+        margin: 0 0;
+        padding: 0;
+    }
+
+    .hero img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero button {
+        bottom: 7rem;
+        top: initial;
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+
+/* end hero */
+
+
+
