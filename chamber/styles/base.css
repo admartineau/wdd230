@@ -36,6 +36,44 @@ footer {
     max-width: 100%;
 }
 
+header, footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0% auto;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--accent2-background-color);
+}
+
+.footersubtitle {
+  text-align: center;
+  background-color: var(--accent1-background-color);
+}
+
+.footercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.footercontainer.footerlogo img {
+  align-content: left;
+  flex-basis: 40%;
+}
+
+.footercontacttext {
+  padding-left: 20px;
+  text-align: center;
+}
+
+footer a:link {
+  color: var(--secondary-font-color)
+}
+
+footer a:visited {
+  color: var(--tertiary-font-color)
+}
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -53,13 +91,8 @@ h2 {
 }
 
 h3 {
-    margin: 0;
-    padding: .5rem 0;
-    text-align: center;
-    font-size: larger;
-    font-weight: 500;
-    color: var(--accent1-background-color);
-    background-color: var(--primary-background-color);
+    font-weight: 200;
+    color: var(--secondary-font-color);
 }
 
 p {
@@ -82,12 +115,7 @@ p {
 /* end banner */
 
 /* header */
-header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    background-color: var(--accent2-background-color);
-}
+
 
 .date {
     margin: 0;
@@ -108,19 +136,23 @@ a:hover, a:active {
     background-color: #224576;
 }
 
-.container {
+header div.logo-container {
     padding: 1.25vw;
 	  display: flex;
     align-items: center;
     justify-content: left;
 }
 
-#logoimage {
+.logo-container img {
     float:left;
-	}
+    max-width: 100%;
+    object-fit: cover;
+}
 
 #logotext {
     padding-left: 20px;
+    align-self: center;
+    font-size: 1rem;
 	}
 
 /* contact */
@@ -232,3 +264,209 @@ img.socialicon {
 
 /* end image */
 /*  end header */
+
+/* main */
+
+/* cards */
+/*
+main.home div,
+main.discover div,
+main.join div,
+main.thankyou div {
+    border: 1px solid var(--accent1-background-color);
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*main.home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 5%;
+}
+*/
+
+.homeGrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5px;
+	padding: 5px;
+}
+
+.hero-image {
+  grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.ecard {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.wcard {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.jcard {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.ncard {
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.spotlight-container {
+  grid-area: 1 / 3 / span 3 / span 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+main div button {
+    padding: 1.5vw 5vw;
+    margin: 4vw;
+    border: none;
+    font-size: 1.25rem;
+    background-color: #FCBA03;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+main div h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto auto auto;
+    line-height: 2.25;
+}
+
+main div h3 {
+    text-align: center;
+    margin: 2.5rem 5%;
+}
+
+*/
+
+/* hero card
+
+.hero {
+  grid-area: 1 / 2 /;
+  grid-row: 1/2;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.heroimg {
+ width: 100%;
+ height: 100%;
+}
+
+.herotitle {
+  position: absolute;
+  color: #0A1128;
+  top: 10%;
+  left: 20%;
+  margin: auto;
+  font-size: 2rem;
+  filter: brightness(120%);
+  z-index: +1;
+}
+
+.herobtn {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  background-color: #98E9DC;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #000;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  filter: brightness(120%);
+  padding: 15px 25px;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/* flip cards */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect 
+ .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}*/
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
+
+/* Position the front and back side 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}*/
+
+/* Style the front side (fallback if image is missing) 
+.flip-card-front {
+  background-color: var(--accent1-background-color);
+  color: black;
+}*/
+
+/* Style the back side
+.flip-card-back {
+  background-color: var(--accent2-background-color);
+  color: white;
+  transform: rotateY(180deg);
+}*/
