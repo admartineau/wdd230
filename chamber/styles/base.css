@@ -273,7 +273,8 @@ main.home div,
 main.discover div,
 main.join div,
 main.thankyou div {
-    border: 1px solid black;
+    margin-top: 1em ;
+    border: 1px solid var(--accent1-background-color);
     box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 

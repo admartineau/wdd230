@@ -78,6 +78,169 @@ main.home {
 
 /* end hero */
 
+/* join */
+main.home div.jcard {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: space-evenly;
+}
+
+.jcard button {
+    font-size: 1.15rem;
+    margin: 1rem auto;
+}
+
+.jcard p {
+    margin: .5rem 1rem;
+    font-size: 1rem;
+}
+
+/* end join */
+
+
+/* news */
+main.home div.ncard {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-content: space-between;
+}
+
+.ncard h2 {
+    align-self: start;
+}
+
+.ncard p {
+    font-size: 1rem;
+    margin: .5rem 1.5rem;
+}
+
+.ncard button {
+    margin-bottom: 1rem;
+}
+
+/* end news */
+
+/* event */
+.ecard {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: .1rem;
+    justify-content: space-between;
+}
+
+.ecard p {
+    font-size: 1rem;
+    margin: .5rem 5%;
+}
+
+.ecard button {
+    margin-bottom: 1.25rem;
+}
+
+/* end event */
+
+
+
+/* weather */
+
+.wcard {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: .1rem;
+    grid-template-rows: max-content max-content max-content max-content max-content;
+}
+
+.wcard h2 {
+    margin: 0;
+    align-self: start;
+    justify-self: stretch;
+}
+
+.wcard img {
+    width: 4rem;
+    margin: .1rem;
+}
+
+.wcard.temperature {
+    font-size: 3rem;
+    margin: .1rem;
+}
+
+.wcard.forecast {
+    font-size: 1.75rem;
+}
+
+.wcard hr {
+    margin: .5rem;
+}
+
+.wcard td {
+    padding: .1rem .7rem;
+}
+
+/* end weather */
+
+/* spotlight business */
+main.home div.spotlight-container {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none;
+}
+
+main.home div.spotlight-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 0 .75rem 0;
+    height: 100%;
+}
+
+main.home div.spotlight-container div h2 {
+    font-size: 1.5rem;
+    width: initial;
+    line-height: 1.3;
+    padding: 1rem 5%;
+}
+
+.spotlight-container img {
+    margin: 0rem 0rem;
+    object-fit: contain;
+    max-width: 8rem;
+    align-self: center;
+}
+
+main.home div.spotlight-container div h3 {
+    margin: 1.5rem 5% 1rem 5%;
+    font-size: 1.25rem;
+}
+
+.spotlight-container div hr {
+    align-self: center;
+    width: 90%;
+    margin: .1rem;
+}
+
+.spotlight-container div p {
+    margin: 1rem 5%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+main.home div.spotlight-container div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+}
+.spotlight-container div:nth-child(3) h2 {
+    align-self: stretch;
+}
 
 
 }
