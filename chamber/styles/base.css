@@ -393,6 +393,15 @@ main.home div.jcard {
   text-align: center;
 }
 
+/* spotlight */
+
+main.home div .spotlight img {
+	border: 1px solid var(--accent1-background-color);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
 /* discover */
 
 main.discover {
