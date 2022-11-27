@@ -395,13 +395,12 @@ main.home div.jcard {
 
 /* spotlight */
 
-main.home div.spotlight {
+main.home div.spotlight-cards {
 	background-color: var(--accent1-background-color);
   text-align: center;
 }
 
-main.home div.spotlight img {
-	background-color: var(--accent1-background-color);
+main.home div.spotlight-cards img {
   border: 1px solid var(--accent1-background-color);
   border-radius: 4px;
   padding: 5px;
