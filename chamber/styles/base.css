@@ -129,6 +129,7 @@ p {
 
 a:link, a:visited {
     text-decoration: none;
+    color: var(--tertiary-font-color)
 }
 
 a:hover, a:active {
