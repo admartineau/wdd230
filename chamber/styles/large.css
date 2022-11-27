@@ -182,7 +182,7 @@ main.home div.ncard {
 /* end weather */
 
 /* spotlight business */
-main.home div.spotlight-container {
+main.home div.spotlight-cards {
     grid-column: 3/4;
     grid-row: 1/4;
     display: flex;
@@ -193,7 +193,7 @@ main.home div.spotlight-container {
     box-shadow: none;
 }
 
-main.home div.spotlight-container div {
+main.home div.spotlight-cards div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -202,44 +202,44 @@ main.home div.spotlight-container div {
     height: 100%;
 }
 
-main.home div.spotlight-container div h2 {
+main.home div.spotlight-cards div h2 {
     font-size: 1.5rem;
     width: initial;
     line-height: 1.3;
     padding: 1rem 5%;
 }
 
-.spotlight-container img {
+.spotlight-cards img {
     margin: 0rem 0rem;
     object-fit: contain;
     max-width: 8rem;
     align-self: center;
 }
 
-main.home div.spotlight-container div h3 {
+main.home div.spotlight-cards div h3 {
     margin: 1.5rem 5% 1rem 5%;
     font-size: 1.25rem;
 }
 
-.spotlight-container div hr {
+.spotlight-cards div hr {
     align-self: center;
     width: 90%;
     margin: .1rem;
 }
 
-.spotlight-container div p {
+.spotlight-cards div p {
     margin: 1rem 5%;
     font-size: 1rem;
     letter-spacing: 1px;
 }
 
-main.home div.spotlight-container div:nth-child(3) {
+main.home div.spotlight-cards div:nth-child(3) {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     margin: 0;
 }
-.spotlight-container div:nth-child(3) h2 {
+.spotlight-cards div:nth-child(3) h2 {
     align-self: stretch;
 }
 
