@@ -138,3 +138,75 @@ function displayResults(data) {
     weatherIcon.alt = `Littleton, Colorado Weather: ${desc}${icon}`;
 }
 
+/* spotlight */
+
+    const requestSPath = 'content/data.json';
+    const spotlightCards = document.querySelector('.spotlight-cards');
+
+    fetch(requestSPath)
+    .then(function (response) {
+        return response.json();
+    })
+
+    .then(function (jsonObject) {
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const slCompanies = jsonObject['companies'];
+        let premiumMembers = slCompanies.filter(isPremium);
+
+        let shuffledPremiums = premiumMembers.sort(shufflePremiums);
+    
+        // shuffledPremiums.forEach(displaycompanies);
+
+        for (let i = 0; i < 3; i++) {
+            displayslCompanies(shuffledPremiums[i]);
+            console.log(shuffledPremiums[i]);
+        };
+    });
+
+    function isPremium(company) {
+        if (company["memberlevel"] == "Gold" | company["memberlevel"] == "Silver") {
+          return company;
+        } else {
+          return false;
+        };
+      };
+
+      function shufflePremiums(companyA, companyB) {
+        return 0.5 - Math.random();
+      };
+
+      function displayslCompanies(company) {
+        // Create elements to add to the document
+        let cardContainer = document.createElement('div');
+        let coNameH2 = document.createElement('h2');
+        let logoForCard = document.createElement('img');
+        let taglineH3 = document.createElement('h3');
+        let hr = document.createElement('hr');
+        let coContactInfo = document.createElement('p');
+        let coWebsiteLink2 = document.createElement('a');
+        coNameH2.textContent = company.name;
+  
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+    logoForCard.setAttribute('src', company.logo);
+    logoForCard.setAttribute('alt', `${company.name} company logo.`);
+    logoForCard.setAttribute('loading', 'lazy');
+
+    taglineH3.textContent = company.tagline;
+    
+    coWebsiteLink2.textContent = 'Website';
+    coWebsiteLink2.setAttribute('href', company.weburl);
+
+    coContactInfo.textContent = ` | ${company.phonenumber} | `;
+
+    // Add/append the section(cardContainer) with the coNameH2 element
+    cardContainer.appendChild(coNameH2);
+    cardContainer.appendChild(logoForCard);
+    cardContainer.appendChild(taglineH3);
+    cardContainer.appendChild(hr);
+    cardContainer.appendChild(coContactInfo);
+
+    coContactInfo.appendChild(coWebsiteLink2);
+  
+    // Add/append the existing HTML div with the directoryCards class with the section(card)
+    document.querySelector('div.spotlight-cards').appendChild(cardContainer);
+  };
