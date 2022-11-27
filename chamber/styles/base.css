@@ -395,8 +395,14 @@ main.home div.jcard {
 
 /* spotlight */
 
+main.home div.spotlight {
+	background-color: var(--accent1-background-color);
+  text-align: center;
+}
+
 main.home div.spotlight img {
-	border: 1px solid var(--accent1-background-color);
+	background-color: var(--accent1-background-color);
+  border: 1px solid var(--accent1-background-color);
   border-radius: 4px;
   padding: 5px;
   width: 150px;
