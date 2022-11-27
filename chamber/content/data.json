@@ -1,0 +1,94 @@
+{
+    "companies":
+    [
+        {
+            "name":"Chatfield Auto Body",
+            "address":"8537 Reed Street, Littleton, Colorado 80128",
+            "phonenumber":"(303) 979-1968",
+            "weburl":"https://chatfieldautobody.com/",
+            "logo":"images/chatfield.jpg",
+            "memberlevel":"Silver",
+            "memberstartdate":"2015"
+        },
+
+        {
+            "name":"Clear Choice Plumbing & Heating, LLC",
+            "address":"3768 S Lipan St, Englewood, Colorado  80110",
+            "phonenumber":"(720) 938-1554",
+            "weburl":"https://aclearchoiceplumbingandheating.com/",
+            "logo":"images/A-CLEAR-CHOICE-1.png",
+            "memberlevel":"Gold",
+            "memberstartdate":"2020"
+        },
+
+        {
+            "name":"Mode Salon",
+            "address":"2580 West Main Street, Littleton, Colorado  80120",
+            "phonenumber":"(303) 797-0393",
+            "weburl":"https://www.modeonmain.com/",
+            "logo":"images/modesalon.webp",
+            "memberlevel":"Bronze",
+            "memberstartdate":"2018"
+        },
+
+        {
+            "name":"Romano's Italian Restaurant",
+            "address":"5666 South Littleton Blvd., Littleton, Colorado  80120",
+            "phonenumber":"(303) 798-4944",
+            "weburl":"http://www.romanospizzeria.com",
+            "logo":"images/gondola2014.png",
+            "memberlevel":"Bronze",
+            "memberstartdate":"2021"
+        },
+
+        {
+            "name":"RaceWay Lube Plus",
+            "address":"7600 S University Blvd., Centennial, Colorado  80122",
+            "phonenumber":"(303) 770-2520",
+            "weburl":"https://racewaylubeplus.com",
+            "logo":"images/LSWL744531-RACEWAY-LUBE.png",
+            "memberlevel":"Gold",
+            "memberstartdate":"2001"
+        },
+
+        {
+            "name":"Joyful Cleaners",
+            "address":"7933 South Broadway, Littleton, Colorado  80122",
+            "phonenumber":"(303) 730-0252",
+            "weburl":"https://joyfulclean.com",
+            "logo":"images/joyfulclean.jpg",
+            "memberlevel":"Bronze",
+            "memberstartdate":"2005"
+        },
+
+        {
+            "name":"Five Wellbeing Spa",
+            "address":"5602 South Nevada Street, Littleton, Colorado  80120",
+            "phonenumber":"(720) 637-8599",
+            "weburl":"https://fivewellbeing.com/",
+            "logo":"images/Five-Wellbeing.png",
+            "memberlevel":"Gold",
+            "memberstartdate":"2018"
+        },
+
+        {
+            "name":"Electric Doctor",
+            "address":"7547 South Newland Street,Littleton, Colorado  80128",
+            "phonenumber":"(303) 973-2551",
+            "weburl":"https://www.electricdoc.com/",
+            "logo":"images/Electric-Doctor-Logo.png",
+            "memberlevel":"Silver",
+            "memberstartdate":"2019"
+        },
+
+        {
+            "name":"TOTAL FITNESS KICKBOXING",
+            "address":"8996 West Bowles Ave, B#1, Littleton, Colorado  80123",
+            "phonenumber":"(303) 933-1697",
+            "weburl":"https://www.totalfitnesskickboxing.com",
+            "logo":"images/totalfitnesskickboxinglogolight.png",
+            "memberlevel":"Silver",
+            "memberstartdate":"2020"
+        }
+    ]
+}

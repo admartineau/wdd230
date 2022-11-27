@@ -393,176 +393,6 @@ main.home div.jcard {
   text-align: center;
 }
 
-/*
-main.home div,
-main.discover div,
-main.join div,
-main.thankyou div {
-    border: 1px solid var(--accent1-background-color);
-    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-/*main.home div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem 5%;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-main div button {
-    padding: 1.5vw 5vw;
-    margin: 4vw;
-    border: none;
-    font-size: 1.25rem;
-    background-color: #FCBA03;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-}
-
-main div h2 {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto auto auto;
-    line-height: 2.25;
-}
-
-main div h3 {
-    text-align: center;
-    margin: 2.5rem 5%;
-}
-
-*/
-
-/* hero card
-
-.hero {
-  grid-area: 1 / 2 /;
-  grid-row: 1/2;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-  padding: 0px;
-}
-
-.heroimg {
- width: 100%;
- height: 100%;
-}
-
-.herotitle {
-  position: absolute;
-  color: #0A1128;
-  top: 10%;
-  left: 20%;
-  margin: auto;
-  font-size: 2rem;
-  filter: brightness(120%);
-  z-index: +1;
-}
-
-.herobtn {
-  position: absolute;
-  bottom: 50px;
-  right: 30px;
-  background-color: #98E9DC;
-  border-radius: 8px;
-  box-shadow: 10px 10px 10px #000;
-  font: inherit;
-  font-size: 1rem;
-  font-weight: bolder;
-  font-style: italic;
-  filter: brightness(120%);
-  padding: 15px 25px;
-}
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-
-
-/* flip cards */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect 
- .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-}
-
-/* This container is needed to position the front and back side 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}*/
-
-/* Do an horizontal flip when you move the mouse over the flip box container 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}*/
-
-/* Position the front and back side 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}*/
-
-/* Style the front side (fallback if image is missing) 
-.flip-card-front {
-  background-color: var(--accent1-background-color);
-  color: black;
-}*/
-
-/* Style the back side
-.flip-card-back {
-  background-color: var(--accent2-background-color);
-  color: white;
-  transform: rotateY(180deg);
-}*/
-
-
 /* discover */
 
 main.discover {
@@ -605,3 +435,78 @@ main.discover.about {
     grid-area: 5 / 1 / span 1 / span 1;
     }  
 
+/* directory */
+
+main.directory {
+  text-align: center;
+}
+
+main.directory .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+	align-items: center;
+  margin: 2rem 10%;
+  gap: 10px 10px;
+}
+
+main.directory .grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--color3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 0.5rem;
+    height: 100%;
+}
+
+main.directory .grid section > * {
+    margin: 0.1rem;
+}
+
+main.directory .grid section img {
+	border: 1px solid var(--accent1-background-color);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+main.directory .grid section p.member-name-p {
+    display: none;
+}
+
+/* directory list */
+
+main.directory .list section {
+    display: block;
+    margin: 0 0;
+    padding: 1rem 0.5rem;
+}
+
+main.directory .list {
+	display: flex;
+	flex-direction: column;
+}
+
+main.directory .list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+main.directory .list section:nth-child(odd) {
+    background-color: var(--color1);
+}
+
+main.directory .list section:nth-child(even) {
+  background-color: var(--color3);
+}
+
+main.directory .list section img {
+	display: none;
+}
+
+main.directory .list section p.member-level-p {
+	display: none;
+}

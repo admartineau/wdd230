@@ -137,3 +137,4 @@ function displayResults(data) {
     weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     weatherIcon.alt = `Littleton, Colorado Weather: ${desc}${icon}`;
 }
+
