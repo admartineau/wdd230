@@ -1,0 +1,149 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+  /* width: 100%; */
+  margin: auto;
+  max-width: 1200px;
+  min-width: 350px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #0A1128;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  min-width: 320px;
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 2%;
+  width: 100%;
+}
+
+#commerceTitle {
+  grid-column: 2/3;
+  grid-row: 1;
+  padding-left: 50px;
+}
+
+h1 h2 h3 h4 {
+  font-family: 'Noto Serif', serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0px auto;
+}
+
+h2 {
+  font-size: 1.0rem;
+}
+
+h4 {
+  font-size: .8rem;
+}
+
+/* navigation bar */
+
+nav {
+    grid-row: 3;
+    background-color:var(--accent2-background-color);
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+     color:blanchedalmond;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color:#ffebcd;
+    border-top: 1px solid rgba(30, 33, 189, 0.5);
+}
+
+nav ul li.active a {
+    background-color:  rgba(172, 173, 233, 0.2);
+    color:azure;
+}
+
+nav ul li a:hover {
+    background-color:  rgba(172, 173, 248, 0.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* end navigation bar */
+
+
+strong {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.social {
+  display: flex;
+  color: white;
+  width: 100%;
+}
+
+.social a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  align-content: center;
+}
+
+.social a:hover {
+  color: #0A1128;
+  background-color: #869FC7;
+  padding: 2px;
+}
+
+.social a:visited {
+  color: white;
+  margin-left: 100px;
+}
+
+.currentdate {
+  grid-column: 1/5;
+  grid-row: 2;
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #869FC7;
+  padding: 10px;
+  color: black;
+  font-weight: bolder;
+}

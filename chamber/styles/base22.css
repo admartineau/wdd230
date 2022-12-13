@@ -1,0 +1,171 @@
+/* color palette */
+:root
+{
+    --primary-background-color: #c2ba9c;
+    --secondary-background-color: #cccca6;
+    --accent1-background-color: #283555;
+    --accent2-background-color: #364b92;
+    --color1: #466d92;
+    --color2: #9cbbc2;
+    --color3: #557da2;
+    --primary-font-color: #3b6171;
+    --secondary-font-color: #ffebcd;
+    --tertiary-font-color: #e1f6ff;
+}
+
+/* end color palette */
+
+
+/* prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* all */
+
+/*  header */
+
+.divheader{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
+    padding: 10x;
+    background-color: var(--accent2-background-color);
+    color:var(--secondary-font-color);
+}
+
+.contact {
+    grid-row: 1;
+    text-align: left;
+    padding: 1.25vw;
+    border: 2px var(--accent1-background-color);
+    background-color:var(--accent1-background-color);
+    color: var(--secondary-font-color);
+    font-size: large;
+    font-weight: normal;
+}
+
+.contact a {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact img {
+    float:right;
+}
+
+.container {
+    padding: 1.25vw;
+    align-items: center;
+    justify-content: left;
+}
+
+#logoimage {
+    float:left;
+    margin: .2rem 2vw;
+	}
+
+#logotext {
+    padding-left: 20px;
+	}
+
+/* end header */
+
+/* navigation bar */
+
+nav {
+    grid-row: 3;
+    background-color:var(--accent2-background-color);
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+     color:blanchedalmond;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color:#ffebcd;
+    border-top: 1px solid rgba(30, 33, 189, 0.5);
+}
+
+nav ul li.active a {
+    background-color:  rgba(172, 173, 233, 0.2);
+    color:azure;
+}
+
+nav ul li a:hover {
+    background-color:  rgba(172, 173, 248, 0.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* end navigation bar */
+
+.topbanner {
+    grid-row: 4;
+    text-align:center;
+    font-size: x-large;
+    font-weight: normal;
+    background-color:var(--accent1-background-color);
+    color: var(--secondary-font-color);
+}
+
+
+body {
+    /* width: 100%; */
+    margin: auto;
+    max-width: 1200px;
+    min-width: 350px;
+  }
+
+  /* image */
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border: 2px solid black
+}
+
+[data-src] {
+  filter: blur(0.2em);
+}
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
+}
+
+/*img.socialicon {
+    border-radius: 100%;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+  } 
+
+/* end image */
