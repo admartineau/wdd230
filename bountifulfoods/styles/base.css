@@ -17,43 +17,43 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --color6: #d14836;
     --color7: #49c5b6;
     --color8: #2779a7;
+    --color9: rgb(42, 42, 129);
+    --color10:#224576;
+
+
     
 }
 /* end color palette */
 
 body {
-    background-color: var(--color4);
+    background-color: var(--color8);
 }
 
 /* navigation */
 
-
-
-/* Mobile View ***************/
 nav {
 	margin: 0 auto;
-	max-width: 760px;
-    border-bottom: 1px solid #ccc;
 }
 
 .navigation {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 .navigation li:first-child {
 	display: block;
 }
 .navigation li {
 	display: none;
+    border: 1px solid var(--color6);
 }
 .navigation a {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: var(--color8);
+	color: var(--color6);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -101,16 +101,43 @@ nav ul li.active a {
 
 /* end navigation */
 
+/* image */
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border: 2px solid black
+}
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
+}
+
+img.socialicon {
+    border-radius: 100%;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+
+  } 
+
+/* end image */
+
 header {
     margin: 0 auto;
-	max-width: 760px;
-	border-bottom: 1px solid #ccc;
+    background-color: var(--color1);
+    border-bottom: 1px solid #ccc;
+
 }
 
 header h1 {
     text-align: center;
     margin:auto;
-    color:var(--color6);
+    color:var(--color9);
 } 
 
 .logo img {
@@ -122,16 +149,53 @@ header h1 {
 	height: auto;
 }
 
-main {
-    background-color: var(--color1);
+.social {
+    text-align: center;
 }
+
+img{
+    filter: blur(0em);
+    transition:filter 0.5s;
+  }
+  
+  img.socialicon {
+      border-radius: 100%;
+      width: 2.5%;
+      margin: 0 auto;
+      height: auto;
+   
+  
+    } 
+
+
+
+main {
+    background-color: var(--color5);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    background-color: var(--color10);
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     margin: 0 auto;
-	max-width: 760px;
     border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-    color:var(--color8);
+    color:var(--color9);
     text-align: center;
     background-color: var(--color1);
 }
