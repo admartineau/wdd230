@@ -180,7 +180,7 @@ img.socialicon {
 
 /* header */
 
-header {
+header, footer{
   margin: 0 auto;
   background-color: var(--color1);
   border: 1px solid #ccc;
@@ -188,7 +188,7 @@ header {
 
 }
 
-header h1 {
+header, footer h1 {
   text-align: center;
   margin:auto;
   color:var(--color9);
@@ -299,38 +299,6 @@ header div.logo-container {
     font-size: 1rem;
 	}
 
-/* contact */
-.contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1.25vw;
-    background-color: var(--accent1-background-color);
-    color: var(--secondary-font-color);
-    font-size: large;
-    font-weight: normal;
-}
-
-.contact div {
-    color:var(--secondary-font-color);
-    letter-spacing: .75px;
-}
-
-.contact a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-weight: 500;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contact img {
-    align-self: center;
-}
-
-/* end contact */
-
 /* navigation bar. */
 
 nav {
@@ -412,7 +380,7 @@ img.socialicon {
 
 
 main.home div,
-main.discover div,
+main.about div,
 main.join div,
 main.thankyou div {
     margin-top: 1em ;
@@ -583,7 +551,45 @@ main.home div.localcard h2 {
   cursor: pointer;
 }
 
+main.aboutus {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4);
+  padding: 2rem;
+}
 
+main.aboutus h1 {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4)
+}
+
+main.aboutus h2 {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4)
+}
+
+.about button {
+  bottom: 2.5rem;
+  margin: 5rem;
+  padding: .5rem 5%;
+  background-color: #2779a7;
+  border-radius: 30%;
+  border: 1px solid var(--color5);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.localcard button:hover {
+  cursor: pointer;
+}
+
+main.aboutus img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  top: 30px;
+}
 
 
 
