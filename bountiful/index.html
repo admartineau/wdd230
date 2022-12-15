@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bountiful Foods</title>
+        <meta name="author" content="Allen Martineau"/>
+        <meta name="description" content="Bountiful Foods for WDD230 - Web Frontend Development at BYUi.">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">    
+    </head>
+    
+    <body>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" href="#"></a></li>
+                <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="fresh.html"><strong>Fresh</strong></a></li>
+                <li><a href="aboutus.html"><strong>About Us</strong></a></li>
+            </ul>
+        </nav>
+
+        <header>
+            
+            <h1>Bountiful Foods</h1>
+
+            <picture class="logo">
+                <img src="images/cornucopia.png" alt="Courtesy of PNGEgg.com">
+            </picture>
+
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialicon" src="images/facebook.png1" alt="Facebook icon."></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="socialicon" src="images/linkedin.png1" alt="Linkedin icon."></a>
+                <a href="https://twitter.com/" target="_blank"><img class="socialicon" src="images/twitter.png1" alt="Twitter icon."></a>
+            </div>
+
+        </header>
+
+        <main class="home">
+
+            <div class="hero">
+
+                <div class="hero-overlay">
+
+                    <img class="hero-image" src="images/fruits1_pngsource-in.png" alt="Picture Courtesy of Thomas Le" loading="lazy">                                  
+                        
+                    <div class="herotitle">
+                        <h3>Fresh Organic Produce<br>From Our Family to Yours</h3>
+                    </div>
+
+                    <button><a href="fresh.html">Invent Your Own Fruit Drink</a></button>
+
+                </div>
+            </div>
+
+            <div class="organic-card">
+                <h2>Certified Organic</h2>
+                        <p>Certified organically grown in beautiful southern California, our fruits and vegetables are picked for peak flavor and 
+                            nutritional value.  We are proud of our legacy as America’s farmers, and we want you to love our products as much as we do!</p>
+                        <button><a href="https://www.nsf.org/testing/food/food-beverage-product-certification/organic-certification">READ MORE</a></button>
+            </div>
+
+            <div class="wcard">
+                <section class="weather">
+                    <h2><a href="https://openweathermap.org/city/5334223">Current Weather:</a></h2>
+                    <img src="" alt="" id="weather-icon">
+                    <p><span id="description"></span></p>
+                  <p>Temperature: <span id="current-temp"></span>&deg; F</p>
+                  <p>Humidity: <span id="humidity"></span> %</p>
+                  <p>3 Day Forcast</p>: <span id="3forcast"></span></p>
+                </section>
+            </div>
+
+            <div class="localcard">
+                <h2>Come Visit us in Beautiful Carlsbad, Californa</h2>
+                <img class="hero-image" src="images/Carlsbad-Beaches-Terramar-Beach_1.jpg" alt="Picture Courtesy of Carlsbad" loading="lazy">
+                <h2>EXPERIENCE EXTRAORDINARY ESCAPES</h2>
+                <p>The Southern California soil gives gardeners sustainable produce year-round. And whether you’re a planter or a gatherer, local produce 
+                    is one of the gems that binds our community and supports our residents. Farmer’s Markets serve as a testament to the value of home grown goods. 
+                    They offer a place for families and entrepreneurs to meet up and enjoy local foods and crafts. They also create local jobs, save resources, and 
+                    promote shopping locally. Farmer’s markets facilitate personal connections between farmers and shoppers, and give farmers more direct access to
+                    money for their goods. Shoppers receive the freshest food in their area and get to enjoy the best of what’s grown in the region.  </p>
+                <button><a href="https://visitcarlsbad.com/">Learn More and Vist Us!</a></button>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="footercontainer">
+
+                <div class = "footercontacttext"> 
+                    <h2>Bountiful Foods</h2>
+                    <p>&#x1F4CD; <a href="https://www.google.com/maps/place/1050+Cannon+Rd,+Carlsbad,+CA+92008/@33.1362,-117.3271928,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc72583b2b63b3:0x2e1a6d3a6268c632!8m2!3d33.1362!4d-117.3271928">
+                    1050 Cannon Road<br>Carlsbad, CA  92008</a></p>
+                    <p> <span> <a href="tel:7606039608">(760) 603-9608</a></span></p>
+                </div>
+            </div>
+
+            <div class="footersubtitle">
+                <p> © <span id="year"> </span>
+                <span>| Bountiful Foods | Allen Martineau | WDD 230 Final Project </span></p>
+                <p> <span id="lastpageupdate"></span></p>
+                <p class="openweather-subtitle">Weather data provided by <a href="https://openweathermap.org/city/5334223" target="_blank">OpenWeather</a></p>
+                <img class="openweather-logo" src="images/openweather-logo-96x41.webp" alt="OpenWeather" loading="lazy">
+            </div>
+         </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

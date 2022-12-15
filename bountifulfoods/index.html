@@ -22,9 +22,9 @@
         <nav>
             <ul class="navigation">
                 <li><a class="menu" href="#"></a></li>
-                <li class="active"><a href="#"><strong>Home</strong></a></li>
-                <li><a href="#"><strong>Fresh</strong></a></li>
-                <li><a href="#"><strong>About Us</strong></a></li>
+                <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="fresh.html"><strong>Fresh</strong></a></li>
+                <li><a href="aboutus.html"><strong>About Us</strong></a></li>
             </ul>
 
             
@@ -46,35 +46,88 @@
 
         </header>
 
-        <main>
-            <section class="organic-card">
-                <picture class="certorganic">
-                  <img src="images/pngegg.png" loading="lazy" alt="Picture courtesy of pngegg.com">
+        <main class="home">
+
+            <div class="hero">
+                <div class="hero-overlay">
+                    <h2>From Our Family to Yours</h2>   
+                    <h3>Certified Organic Produce</h3>
+                    <img class="hero-image" src="images/pngegg.png" alt="Red Rocks Community." loading="lazy">                                  
+                    <button><a href="join.html">JOIN TODAY</a></button>
+                </div>
+            </div>
+
+            <div class="ecard">
+                <h2>Ribbon Cutting</h2>
+                <h3>Black Rock Coffee Bar</h3>
+                        <p>Join us for the grand opening of our newest location at Belleview and Prince, Friday, November 19th, 2022 from 5am to 9pm.</p>
+                        <button><a href="https://m.facebook.com/events/579894446634599/">READ MORE</a></button>
+            </div>
+
+            <div class="wcard">
+                <section class="weather">
+                    <h2><a href="https://openweathermap.org/city/5334223">Current Weather:</a></h2>
+                    <img src="" alt="" id="weather-icon">
+                    <p><span id="description"></span></p>
+                  <p>Temperature: <span id="current-temp"></span>&deg; F</p>
+                  <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+                  <p>Wind Chill: <span id="windChill"></span>&deg; F</p>
+                </section>
+            </div>
+
+            <div class="ncard">
+                <h2>News Release</h2>
+                <h3>Shop Local for the Holidays</h3>
+                <p>Consumers encouraged to keep some holiday spending local...</p>
+                <button><a href="https://littletonindependent.net/stories/consumers-encouraged-to-keep-some-holiday-spending-local,408058">READ MORE</a></button>
+            </div>
+
+            <div class="jcard">
+                <button><a href="join.html">JOIN NOW</a></button>
+                <p>There is power in connections! Join the Littleton Chamber of Commerce today and be a part of supporting our local community.</p>
+            </div>
+
+            <div class="spotlight-cards"></div>
+
+
+            <div class="hero">
+                <picture class="hero-image-container">
+                    <img class="hero-img" src="images/pngegg.png" loading="lazy" alt="Picture courtesy of pngegg.com">
                 </picture>
-                <div class="certifiedorganic">
-                  <h3>Cerified Organic</h3>
-                  <p>Food labeled ‘organic’ must meet a set of national standards established and regulated by the 
-                    US Department of Agriculture, whether grown in the US or imported to the US. Certification under 
-                    the USDA National Organic Program (NOP) is required to use ‘organic’ in the labeling, marketing 
-                    and representation of food.</p>
+                <div class="hero-contrast-heading">
+                    <a href="fresh.html">Create your custom drink!</a>
                 </div>
-            </section>
 
-            <section class="weather-card">
-                <h1 class="localweather">Carlsbad, California</h1>
-                <div class="weatherContainer container1">
-                  <div class="weatherContent weathertoday">
-                    <h2 class="currentTemp"></h2>
-                    <p class="condition">Condition: <strong><span class="currentCond"></span></strong></p>
-                    <p class="weatherIcon"></p>
-                    <p class="humidity">Humidity: <span class="currentHum"></span></p>
-                  </div>        
-                  <div class="threeweather"> 
-                    <h2 class=" threeTitle">3 Day Forecast</h2>
-                  </div>
-                </div>
-              </section>
 
+            <div class="cards">
+                <section class="organic-card">
+                    <picture class="certorganic">
+                    <img src="images/thomas-le-unsplash.webp" alt="Photo courtesy of Thomas Le" loading="lazy" width="300"> 
+                    </picture>
+                    <div class="certifiedorganic">
+                    <h3>Cerified Organic</h3>
+                    <p>Food labeled ‘organic’ must meet a set of national standards established and regulated by the 
+                        US Department of Agriculture, whether grown in the US or imported to the US. Certification under 
+                        the USDA National Organic Program (NOP) is required to use ‘organic’ in the labeling, marketing 
+                        and representation of food.</p>
+                    </div>
+                </section>
+
+                <section class="weather-card">
+                    <h1 class="localweather">Carlsbad, California</h1>
+                    <div class="weatherContainer container1">
+                    <div class="weatherContent weathertoday">
+                        <h2 class="currentTemp"></h2>
+                        <p class="condition">Condition: <strong><span class="currentCond"></span></strong></p>
+                        <p class="weatherIcon"></p>
+                        <p class="humidity">Humidity: <span class="currentHum"></span></p>
+                    </div>        
+                    <div class="threeweather"> 
+                        <h2 class=" threeTitle">3 Day Forecast</h2>
+                    </div>
+                    </div>
+                </section>
+            </div>
 
 
         </main>

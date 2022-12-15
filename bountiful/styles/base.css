@@ -1,0 +1,589 @@
+/* prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* color palette */
+:root
+{
+    --color1: #8d8741;
+    --color2: #659dbd;
+    --color3: #daad86;
+    --color4: #bc986a;
+    --color5: #fbeec1;
+    --color6: #d14836;
+    --color7: #49c5b6;
+    --color8: #2779a7;
+    --color9: rgb(42, 42, 129);
+    --color10:#224576;
+
+
+    
+}
+/* end color palette */
+
+body {
+    background-color: var(--color8);
+}
+
+/* navigation */
+
+nav {
+	margin: 0 auto;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    background-color: var(--color2);
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+    border: 1px solid var(--color6);
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--color6);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+nav ul li.active a {
+    background-color: var(--color10);
+    color:azure;
+}
+
+.menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: var(--color5);
+	background-color: var(--color6);
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.menu::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+/* end navigation */
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--color4);
+}
+
+header,
+nav,
+footer {
+    margin: 1.25rem auto;
+    max-width: 100%;
+}
+
+header, footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0% auto;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--accent2-background-color);
+}
+
+.footersubtitle {
+  text-align: center;
+  background-color: var(--accent1-background-color);
+}
+
+.footercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.footercontainer.footerlogo img {
+  align-content: left;
+  flex-basis: 40%;
+}
+
+.footercontacttext {
+  padding-left: 20px;
+  text-align: center;
+}
+
+footer a:link {
+  color: var(--secondary-font-color)
+}
+
+footer a:visited {
+  color: var(--tertiary-font-color)
+}
+
+/* image */
+
+.images {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+  border: 2px solid black
+}
+
+img{
+filter: blur(0em);
+transition:filter 0.5s;
+}
+
+img.socialicon {
+  border-radius: 100%;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+
+} 
+
+/* end image */
+
+/* header */
+
+header {
+  margin: 0 auto;
+  background-color: var(--color1);
+  border: 1px solid #ccc;
+
+
+}
+
+header h1 {
+  text-align: center;
+  margin:auto;
+  color:var(--color9);
+} 
+
+.logo img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+  width: 75px;
+  height: auto;
+}
+
+.social {
+  text-align: center;
+}
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
+}
+
+img.socialicon {
+    border-radius: 100%;
+    max-width: 100%;
+  
+  } 
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--color9);
+}
+
+h2 {
+    font-weight: 300;
+    color: var(--color9);
+
+}
+
+h3 {
+    font-weight: 200;
+    color: var(--color9);
+}
+
+p {
+    font-weight: normal;
+    color: var(--secondary-font-color);
+}
+
+/* banner */
+
+.banner {
+    margin: 0 auto;
+    padding: .5rem 0;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    background-color: var(--accent2-background-color);
+}
+
+/* end banner */
+
+
+
+.date {
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    color: var(--accent1-background-color);
+    background-color: var(--primary-background-color);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--tertiary-font-color)
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    background-color: #224576;
+}
+
+header div.logo-container {
+    padding: 1.25vw;
+	  display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo-container img {
+    float:left;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#logotext {
+    padding-left: 20px;
+    align-self: center;
+    font-size: 1rem;
+	}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.25vw;
+    background-color: var(--accent1-background-color);
+    color: var(--secondary-font-color);
+    font-size: large;
+    font-weight: normal;
+}
+
+.contact div {
+    color:var(--secondary-font-color);
+    letter-spacing: .75px;
+}
+
+.contact a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 500;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact img {
+    align-self: center;
+}
+
+/* end contact */
+
+/* navigation bar. */
+
+nav {
+    background-color:var(--accent1-background-color);
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--secondary-font-color)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color:#ffebcd;
+    border-top: 1px solid rgba(30, 33, 189, 0.5);
+}
+
+nav ul li.active a {
+    background-color:  rgba(130, 131, 206, 0.2);
+    color:azure;
+}
+
+nav ul li a:hover {
+    background-color:  rgba(30, 33, 189,0.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* end navigation bar */
+
+/* image */
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border: 2px solid black
+}
+
+
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
+}
+
+img.socialicon {
+    border-radius: 100%;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+  } 
+
+/* end image */
+/*  end header */
+
+/* main */
+
+
+
+main.home div,
+main.discover div,
+main.join div,
+main.thankyou div {
+    margin-top: 1em ;
+    border: 1px solid var(--accent1-background-color);
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+main.home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 10%;
+    gap: 10px 10px;
+}
+
+main div button {
+    padding: 1.5vw 5vw;
+    margin: 4vw;
+    border: none;
+    font-size: 1.25rem;
+    background-color: var(--secondary-background-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+main div h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto auto auto;
+    line-height: 2.25;
+}
+
+main div h3 {
+    text-align: center;
+    margin: 2.5rem 5%;
+}
+
+/* cards */
+
+/* hero card */
+
+main.home div.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  min-height: 12rem;
+  background-color: var(--color10);
+}
+
+main.home div.hero h2 {
+  position: absolute;
+  top: 3rem;
+  text-align: center;
+  color: var(--color9);
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  padding: .5rem 1%;
+}
+
+main.home div.hero h3 {
+  position: absolute;
+ 
+  margin: auto;
+  font-size: large;
+  line-height: normal;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+  color: var(--color6);
+}
+
+.hero img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  top: 30px;
+}
+
+.hero button {
+    bottom: 2.5rem;
+    margin: 5rem;
+    padding: .5rem 5%;
+    background-color: #2779a7;
+    border-radius: 30%;
+    border: 1px solid var(--color5);
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.hero button:hover {
+    cursor: pointer;
+}
+
+
+/* weather card */
+
+main.home div.wcard {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4);
+  padding: 2rem;
+}
+
+main.home div.wcard h2 {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4)
+}
+
+/* organic card */
+
+main.home div.organic-card {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4);
+  padding: 2rem;
+}
+
+main.home div.organic-card h2 {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4)
+}
+
+.organic-card button {
+  bottom: 2.5rem;
+  margin: 5rem;
+  padding: .5rem 5%;
+  background-color: #2779a7;
+  border-radius: 30%;
+  border: 1px solid var(--color5);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.organic-card button:hover {
+  cursor: pointer;
+}
+
+
+/* local card */
+
+main.home div.localcard {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4);
+  padding: 2rem;
+}
+
+main.home div.localcard h2 {
+  background-color: var(--color10);
+  text-align: center;
+  color: var(--color4)
+}
+
+.localcard button {
+  bottom: 2.5rem;
+  margin: 5rem;
+  padding: .5rem 5%;
+  background-color: #2779a7;
+  border-radius: 30%;
+  border: 1px solid var(--color5);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.localcard button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
