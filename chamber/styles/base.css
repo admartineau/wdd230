@@ -25,8 +25,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     line-height: 1.5;
-    background-color: #4e4e4e;
-    font-family: 'Montserrat', sans-serif;
 }
 
 header,
@@ -42,12 +40,12 @@ header, footer {
   margin: 0% auto;
   max-width: 100%;
   height: auto;
-  background-color: var(--accent2-background-color);
+
 }
 
 .footersubtitle {
   text-align: center;
-  background-color: var(--accent1-background-color);
+ 
 }
 
 .footercontainer {
@@ -66,13 +64,6 @@ header, footer {
   text-align: center;
 }
 
-footer a:link {
-  color: var(--secondary-font-color)
-}
-
-footer a:visited {
-  color: var(--tertiary-font-color)
-}
 
 main {
     max-width: 1200px;
@@ -81,23 +72,23 @@ main {
 
 h1 {
     font-weight: 500;
-    color: var(--secondary-font-color);
+
 }
 
 h2 {
     font-weight: 300;
-    color: var(--secondary-font-color);
+
 
 }
 
 h3 {
     font-weight: 200;
-    color: var(--secondary-font-color);
+
 }
 
 p {
     font-weight: normal;
-    color: var(--secondary-font-color);
+
 }
 
 /* banner */
@@ -123,8 +114,7 @@ p {
     text-align: center;
     font-size: larger;
     font-weight: 700;
-    color: var(--accent1-background-color);
-    background-color: var(--primary-background-color);
+
 }
 
 a:link, a:visited {
@@ -162,14 +152,12 @@ header div.logo-container {
     flex-direction: row;
     align-items: center;
     padding: 1.25vw;
-    background-color: var(--accent1-background-color);
-    color: var(--secondary-font-color);
     font-size: large;
     font-weight: normal;
 }
 
 .contact div {
-    color:var(--secondary-font-color);
+
     letter-spacing: .75px;
 }
 
@@ -191,7 +179,7 @@ header div.logo-container {
 /* navigation bar. */
 
 nav {
-    background-color:var(--accent1-background-color);
+
 }
 
 nav button {
@@ -199,7 +187,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: var(--secondary-font-color)
+
 }
 
 nav ul {
